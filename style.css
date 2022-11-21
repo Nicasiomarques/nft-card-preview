@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+:root {
+  --color-bg-body: #0D192C;
+  --color-bg-card: #15263F;
+  --color-font-body: #8BACD9;
+  --color-white: #fff;
+  --font-size: 1.8rem;
+  --size-md: 1.6rem;
+  --size-lg: 2.4rem
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--color-bg-body);
+
+  font-size: var(--font-size);
+}
+
+.card {
+  width: 35rem;
+  height: 59.6rem;
+  border-radius: 2rem;
+  background-color: var(--color-bg-card);
+  padding: var(--size-lg);
+}
+
+.card__img {
+  height: 30.02rem;
+  width: 30.02rem;
+  border-radius: .8rem;
+}
+
+.card__title {
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 27.72px;
+  color: var(--color-white);
+  margin-top: var(--size-lg);
+  margin-bottom: var(--size-md);
+}
+
+.card__description {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.6rem;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--color-font-body);
+  margin-bottom: var(--size-lg);
+
+}
+
+.card__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #00FFF8;
+  margin-bottom: var(--size-lg);
+}
+
+.card__value {
+  font-size: var(--size-md);
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.card__left-time {
+  color: var(--color-font-body);
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.card__divider {
+  border-top: 1px solid #2E405A;
+}
+
+.card__footer {
+  display: flex;
+  align-items: center;
+  padding-top: .65rem;
+}
+
+.card__footer-avatar {
+  width: 33px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.card__footer-copyright {
+  padding-left: var(--size-md);
+  line-height: 2.016rem;
+  font-size: 1.6rem;
+  color: var(--color-font-body);
+}
+
+.card__footer-author {
+  color: var(--color-white);
+}
+
+.card__icon-box img {
+  margin-right: 0.6048rem;
+}
+
+.card__icon-box {
+  display: flex;
+  align-items: center;
+}
